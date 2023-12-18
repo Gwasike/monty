@@ -42,4 +42,8 @@ typedef struct instruction_s
 
 
 void push(stack_t **head, unsigned int counter);
+void f_pall(stack_t **head, unsigned int counter); // pall.c
+void f_div(stack_t **head,unsigned int counter); // f_div.c
+void f_string(stack_t **head, unsigned int counter); // f_string.c
+
 #endif /* MONTY_H */

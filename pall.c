@@ -6,7 +6,21 @@
  * @counter: number of lines
  * Return: void
 */
-void pall(stack_t **head, unsigned int counter __attribute__((unused)))
+void f_pall(stack_t **head, unsigned int counter)
 {
-print_stack(*head);
+stack_t *i;
+(void)counter;
+
+i = *head;
+if (i == NULL)
+{
+return (0);
+}
+
+while (i)
+{
+printf("%d\n", i->n);
+i = i->next;
+}
+
 }
