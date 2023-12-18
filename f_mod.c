@@ -1,5 +1,10 @@
 #include "monty.h"
 
+/**
+ * f_mod - computes the remainder of the division carried out by f_div.c
+ * @head: Pointer to the pointer to the head of the stack
+ * @counter: line number of script being executed
+*/
 void f_mod(stack_t **head, unsigned int counter)
 {
 stack_t *i;
