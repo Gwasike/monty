@@ -10,13 +10,15 @@ instruction_t opst[] = {
 {"div", f_div},
 {"rotate", f_rotate},
 {"pstr", f_string},
-{"f_add", f_add},
+{"add", f_add},
 {"pop", f_pop},
 {"nop", f_nop},
 {"mod", f_mod},
-{"f_stack", f_stack},
-{"f_queue", f_queue},
-{"f_char", f_char},
+{"stack", f_stack},
+{"queue", f_queue},
+{"pchr", f_char},
+{"mul", f_mul},
+{"sub", f_sub},
 {NULL, NULL}
 };
 

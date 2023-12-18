@@ -76,5 +76,7 @@ void addqueue(stack_t **head, int n); /* queue.c */
 void f_queue(stack_t **head, unsigned int counter); /* queue.c */
 void free_stack(stack_t *head); /* free_stack.c */
 void addnode(stack_t **head, int i); /* addnode.c */
+void f_mul(stack_t **head, unsigned int counter); /* mul.c */
+void f_sub(stack_t **head, unsigned int counter); /* sub.c */
 
 #endif /* MONTY_H */
