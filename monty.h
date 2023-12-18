@@ -40,10 +40,39 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
+/**
+ * struct bus_s - variables -args, file, line content
+ * @arg: value
+ * @file: pointer to monty file
+ * @content: line content
+ * @lifi: flag change stack <-> queue
+ * Description: carries values through the program
+ */
+typedef struct bus_s
+{
+	char *arg;
+	FILE *file;
+	char *content;
+	int lifi;
+}  bus_t;
+extern bus_t bus;
 
-void push(stack_t **head, unsigned int counter);
+void f_push(stack_t **head, unsigned int counter); // f_push.c
+void f_pop(stack_t **head, unsigned int counter); // f_pop.c
 void f_pall(stack_t **head, unsigned int counter); // pall.c
 void f_div(stack_t **head,unsigned int counter); // f_div.c
-void f_string(stack_t **head, unsigned int counter); // f_string.c
+void f_string(stack_t **head, unsigned int counter); // f_string.
+void f_mod(stack_t **head, unsigned int counter); // f_mod.c
+void f_rotate(stack_t **head, __attribute__((unused)) unsigned int counter); // f_rotate.c
+void f_add(stack_t **head, unsigned int counter); // f_add.c
+int f_execute(char *content, stack_t **head, unsigned int counter, FILE *file); // f_execute.c
+void f_char(stack_t **head, unsigned int counter); // f_char.c
+void f_nop(stack_t **head, unsigned int counter); // f_nop.c
+void f_pint(stack_t **head, unsigned int counter); // f_pint.c
+int main(int argc, char *argv[]); // main.c
+void f_swap(stack_t **head, unsigned int counter); // f_swap.c
+void f_stack(stack_t **head, unsigned int counter); // f_stack.c
+void addqueue(stack_t **head, int n); // f_queue
+void f_queue(stack_t **head, unsigned int counter); // f_queue.c
 
 #endif /* MONTY_H */
