@@ -6,7 +6,7 @@ instruction_t opst[] = {
 {"push", f_push},
 {"swap", f_swap},
 {"pall", f_pall},
-("pint", f_pint),
+{"pint", f_pint},
 {"div", f_div},
 {"rotate", f_rotate},
 {"pstr", f_string},

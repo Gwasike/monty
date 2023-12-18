@@ -57,22 +57,24 @@ typedef struct bus_s
 }  bus_t;
 extern bus_t bus;
 
-void f_push(stack_t **head, unsigned int counter); // push.c
-void f_pop(stack_t **head, unsigned int counter); // pop.c
-void f_pall(stack_t **head, unsigned int counter); // pall.c
-void f_div(stack_t **head,unsigned int counter); // div.c
-void f_string(stack_t **head, unsigned int counter); // string.
-void f_mod(stack_t **head, unsigned int counter); // mod.c
-void f_rotate(stack_t **head, __attribute__((unused)) unsigned int counter); // rotl.c
-void f_add(stack_t **head, unsigned int counter); // add.c
-int f_execute(char *content, stack_t **head, unsigned int counter, FILE *file); // execute.c
-void f_char(stack_t **head, unsigned int counter); // pchar.c
-void f_nop(stack_t **head, unsigned int counter); // nop.c
-void f_pint(stack_t **head, unsigned int counter); // pint.c
-int main(int argc, char *argv[]); // main.c
-void f_swap(stack_t **head, unsigned int counter); // swap.c
-void f_stack(stack_t **head, unsigned int counter); // stack.c
-void addqueue(stack_t **head, int n); // queue
-void f_queue(stack_t **head, unsigned int counter); // queue.c
+void f_push(stack_t **head, unsigned int counter); /* push.c */
+void f_pop(stack_t **head, unsigned int counter); /* pop.c */
+void f_pall(stack_t **head, unsigned int counter); /* pall.c */
+void f_div(stack_t **head,unsigned int counter); /* div.c */
+void f_string(stack_t **head, unsigned int counter); /* pstr.c */
+void f_mod(stack_t **head, unsigned int counter); /* mod.c */
+void f_rotate(stack_t **head, __attribute__((unused)) unsigned int counter); /* rotl.c */
+void f_add(stack_t **head, unsigned int counter); /* add.c */
+int f_execute(char *content, stack_t **head, unsigned int counter, FILE *file); /* execute.c */
+void f_char(stack_t **head, unsigned int counter); /* pchar.c */
+void f_nop(stack_t **head, unsigned int counter); /* nop.c */
+void f_pint(stack_t **head, unsigned int counter); /* pint.c */
+int main(int argc, char *argv[]); /* main.c */
+void f_swap(stack_t **head, unsigned int counter); /* swap.c */
+void f_stack(stack_t **head, unsigned int counter); /* stack.c */
+void addqueue(stack_t **head, int n); /* queue.c */
+void f_queue(stack_t **head, unsigned int counter); /* queue.c */
+void free_stack(stack_t *head); /* free_stack.c */
+void addnode(stack_t **head, int i); /* addnode.c */
 
 #endif /* MONTY_H */

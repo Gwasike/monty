@@ -1,4 +1,5 @@
 #include "monty.h"
+#include <stdio.h>
 
 bus_t bus = {NULL, NULL, NULL, 0};
 
@@ -37,7 +38,7 @@ bus.content = content;
 counter++;
 if (read_line > 0)
 {
-execute(content, &stack, counter, file);
+f_execute(content, &stack, counter, file);
 }
 free(content);
 }

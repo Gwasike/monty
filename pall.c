@@ -14,7 +14,7 @@ stack_t *i;
 i = *head;
 if (i == NULL)
 {
-return (0);
+return;
 }
 
 while (i)

@@ -12,7 +12,7 @@ copy_str = *head;
 
 if (*head == NULL || (*head)->next == NULL)
 {
-return (0);
+return;
 }
 while (copy_str->next)
 {
